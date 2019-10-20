@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">DBFitnesWorld</string>
+    <string-array name="avatars">
+        <item>Kuririn</item>
+        <item>Gohan</item>
+        <item>Picolo</item>
+        <item>Ultimate Gohan</item>
+        <item>Vegeta</item>
+        <item>Goku</item>
+    </string-array>
+    <string-array name="activitylevel">
+        <item>Working Out less than 3 days per week</item>
+        <item>Working Out more than 3 days per week</item>
+        <item>Working Out everyday</item>
+        <item>Never Work Out before</item>
+    </string-array>
+    <string-array name="BodyType">
+        <item>Skinny-Tall</item>
+        <item>Skinny-Short</item>
+        <item>Build-Tall</item>
+        <item>Build-Short</item>
+        <item>Athletic</item>
+    </string-array>
+    <string-array name="ExerciseType">
+        <item>Weight Lifting</item>
+        <item>Free Running</item>
+        <item>Martial Arts</item>
+        <item>Long Distance Run</item>
+        <item>Calisthenics</item>
+        <item>Power Lifting</item>
+    </string-array>
+    <string-array name="ExerciseTypeBodyB">
+        <item>__ADD NEW__</item>
+        <item>__BICEPS__</item>
+        <item>Barbell Curls</item>
+        <item>Dumbbell Curls</item>
+        <item>Hammer Curls</item>
+        <item>Concentration Curls</item>
+        <item>Drag Curls</item>
+        <item>Spider Curls</item>
+        <item>Incline Dumbbell Curls</item>
+        <item>Barbell Preacher Curls</item>
+        <item>Elastic Band Curls</item>
+        <item>Chin Ups</item>
+        <item>__TRICEPS__</item>
+        <item>Bench Dips</item>
+        <item>Parallel Bar Dips</item>
+        <item>Diamond Push Ups</item>
+        <item>Close Grip Barbell Bench Press</item>
+        <item>Triceps Kick Backs</item>
+        <item>Rope Pull</item>
+        <item>Reverse Pull</item>
+    </string-array>
+    <string-array name="ExerciseTypeFF">
+        <item>Front Flip</item>
+        <item>Back Flip</item>
+        <item>Butterfly Kick</item>
+        <item>Wall Run</item>
+        <item>Wall Flip</item>
+        <item>Cat Leap</item>
+        <item>Kong</item>
+        <item>Thief Vault</item>
+        <item>Monkey Vault</item>
+        <item>Lazy Vault</item>
+        <item>Precision Jump</item>
+    </string-array>
+    <string-array name="ExerciseTypeCalistenics">
+        <item>Handstand</item>
+        <item>Handstand Press</item>
+        <item>Press to Handstand</item>
+        <item>Planche</item>
+        <item>Pseudo Planche</item>
+        <item>Pike Press</item>
+        <item>Muscle Up</item>
+    </string-array>
+
+
+</resources>

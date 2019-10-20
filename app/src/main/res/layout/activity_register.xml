@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".RegisterActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginTop="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="750dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="350px"
+                android:layout_height="360px"
+                android:src="@drawable/dblogog"/>
+
+            <EditText
+
+                android:drawableLeft="@drawable/user"
+                android:hint="Email"
+                android:textAlignment="center"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:id="@+id/username"
+                android:inputType="textEmailAddress"/>
+            <EditText
+
+                android:drawableLeft="@drawable/user"
+                android:hint="Username"
+                android:textAlignment="center"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:id="@+id/nickname"/>
+            <EditText
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/key"
+                android:hint="Password"
+                android:textAlignment="center"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:id="@+id/password"/>
+            <EditText
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/key"
+                android:hint="Repeat Password"
+                android:textAlignment="center"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:id="@+id/passwordrepeat"/>
+
+            <TextView
+                android:layout_marginTop="25dp"
+                android:hint="Choose Difficulty"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_width="250dp"
+                android:layout_height="30dp" />
+            <Spinner
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:textAlignment="center"
+                android:id="@+id/spinnermaster">
+            </Spinner>
+            <ImageView
+                android:layout_width="250px"
+                android:layout_height="250px"
+                android:src="@drawable/db2"
+                android:id="@+id/avatarmaster"/>
+            <TextView
+                android:layout_marginTop="25dp"
+                android:hint="Master"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_width="250dp"
+                android:layout_height="80dp"
+                android:id="@+id/masterbox"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/colorPrimary">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="User Age"
+                    android:gravity="center"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <EditText
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:hint="Age"
+                        android:id="@+id/userage"
+                        android:gravity="center"
+                        android:inputType="number"/>
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:text="years old"
+                        android:textAlignment="center"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="User Weight"
+                    android:gravity="center"/>
+                <EditText
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:hint="weight in kg"
+                    android:gravity="center"
+                    android:id="@+id/userweight"
+                    android:inputType="numberDecimal"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/colorPrimary">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="User Height"
+                    android:gravity="center"/>
+                <EditText
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:hint="height in centimeters"
+                    android:gravity="center"
+                    android:id="@+id/userheight"
+                    android:inputType="numberDecimal"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Body-Type"
+                    android:gravity="center"/>
+                <Spinner
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:id="@+id/bodytype"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/colorPrimary"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Activity Level"
+                    android:gravity="center"/>
+                <Spinner
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:id="@+id/activitylv"/>
+            </LinearLayout>
+
+            <Button
+                android:layout_marginTop="20dp"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:background="@drawable/buttonlogin"
+                android:text="Next"
+                android:id="@+id/registerbutton"
+                android:layout_marginBottom="28dp"/>
+        </LinearLayout>
+    </ScrollView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ScrollView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

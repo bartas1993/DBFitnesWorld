@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".RegisterActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+
+            android:layout_marginTop="7dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="750dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="550px"
+                android:layout_height="560px"
+                android:src="@drawable/dblogog"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/colorPrimary">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="User Age"
+                    android:gravity="center"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <EditText
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:hint="Age"
+                        android:gravity="center"
+                        android:inputType="number"/>
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:text="years old"
+                        android:textAlignment="center"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="User Weight"
+                    android:gravity="center"/>
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:hint="weight in kg"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/colorPrimary">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="User Height"
+                    android:gravity="center"/>
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:hint="height in centimeters"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Body-Type"
+                    android:gravity="center"/>
+                <Spinner
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/colorPrimary"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Activity Level"
+                    android:gravity="center"/>
+                <Spinner
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Experience"
+                    android:gravity="center"/>
+                <Spinner
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:gravity="center" />
+            </LinearLayout>
+            <Button
+                android:layout_marginTop="20dp"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:background="@drawable/buttonlogin"
+                android:text="Register"
+                android:id="@+id/registerbutton"
+                android:layout_marginBottom="28dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

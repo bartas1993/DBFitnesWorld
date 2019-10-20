@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "41872540330",
+    "firebase_url": "https://dbfitnesworld.firebaseio.com",
+    "project_id": "dbfitnesworld",
+    "storage_bucket": "dbfitnesworld.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:41872540330:android:ecc749c977c48f984346d3",
+        "android_client_info": {
+          "package_name": "com.example.dbfitnesworld"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "41872540330-gt58d0a2qdtslq985uh2dbvjcsr5lk2d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dbfitnesworld",
+            "certificate_hash": "d61f3cdf8630c550af1fd28f0ae971b3d05e1c99"
+          }
+        },
+        {
+          "client_id": "41872540330-84svhmf79kq9dsqlas7rbn5hk0kd3pb1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhypkrR2wYwyLklFa2FtqSUYL2fALwuwc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "41872540330-84svhmf79kq9dsqlas7rbn5hk0kd3pb1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
