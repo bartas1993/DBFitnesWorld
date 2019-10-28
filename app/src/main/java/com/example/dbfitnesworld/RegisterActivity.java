@@ -39,7 +39,7 @@ public class RegisterActivity extends AppCompatActivity {
     public Button next;
     public FirebaseAuth mAuth;
     FirebaseDatabase database = FirebaseDatabase.getInstance();
-    DatabaseReference databaseRef,databaseRef2;
+    DatabaseReference databaseRef,databaseRef2,databaseRef3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,7 +77,7 @@ public class RegisterActivity extends AppCompatActivity {
                         HashMap<String,String> map = new HashMap<>();
                         final HashMap<String,Double> map2 = new HashMap<>();
                         map.put("Nickname",nickname);
-                        map.put("Level","Novice");
+                        map2.put("Level",1.0);
                         map.put("UserMail",user);
                         map.put("Difficulty",spinmaster.getSelectedItem().toString());
                         map.put("UserAge",agee);
@@ -89,6 +89,7 @@ public class RegisterActivity extends AppCompatActivity {
                         map2.put("Speed",0.05);
                         map2.put("Endurance",0.05);
                         map2.put("OverallLevel",0.0);
+                        map2.put("Multiplier",1000.0);
                         databaseRef.setValue(map).addOnCompleteListener(new OnCompleteListener<Void>() {
                             @Override
                             public void onComplete(@NonNull Task<Void> task) {

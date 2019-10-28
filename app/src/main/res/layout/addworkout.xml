@@ -60,7 +60,7 @@
                     android:text="-"
                     android:id="@+id/minusrep"/>
                 <EditText
-                    android:hint="REPS"
+                    android:hint="Reps"
                     android:text="0"
                     android:textAlignment="center"
                     android:layout_width="80dp"
@@ -94,36 +94,133 @@
                     android:layout_height="40dp"
                     android:inputType="numberDecimal"
                     android:textAlignment="center"
-                    android:hint="KG"
+                    android:hint="Kg"
                     android:text="0"
                     android:id="@+id/weigtinput"/>
+
                 <Button
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:text="+"
                     android:id="@+id/increaseweight"/>
             </LinearLayout>
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Distance:"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/distanceplus"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="-" />
+
+                <EditText
+                    android:id="@+id/distance"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:hint="Meters"
+                    android:inputType="numberDecimal"
+                    android:text="0"
+                    android:textAlignment="center"
+                    />
+
+                <Button
+                    android:id="@+id/distanceminus"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="+" />
+            </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:gravity="center">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="INTENSITY"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+                    <SeekBar
+                        android:layout_width="140dp"
+                        android:layout_height="30dp"
+                        android:max="100"
+                        android:id="@+id/intensity"
+                        android:progress="50"/>
+
+                    <TextView
+                        android:layout_marginStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Low"
+                        android:id="@+id/intensitytxt"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MOTIVATION"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+                    <SeekBar
+                        android:max="100"
+                        android:layout_width="140dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/motivation"
+                        android:progress="50"/>
+
+                    <TextView
+                        android:layout_marginStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Low"
+                        android:id="@+id/motivationtxt"/>
+
+                </LinearLayout>
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="70dp"
+                    android:layout_height="60dp"
                     android:orientation="horizontal"
                     android:gravity="center">
                     <EditText
                         android:textAlignment="center"
                         android:layout_width="250dp"
-                        android:layout_height="50dp"
-                        android:hint="Add Notes"/>
+                        android:layout_height="40dp"
+                        android:hint="Add Notes"
+                        android:id="@+id/addnotes"/>
+
 
                 </LinearLayout>
 
             </LinearLayout>
 
         </LinearLayout>
+
 
        <Button
            android:layout_width="300dp"
@@ -133,10 +230,19 @@
         <Button
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:text="Complete Workout"
-            android:id="@+id/addExercise"/>
+            android:text="Cancel"
+            android:id="@+id/addWorkout"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/display"/>
+        </LinearLayout>
 
     </LinearLayout>
+
 
 </ScrollView>
 

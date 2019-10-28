@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#E4F9FF</color>
-    <color name="colorPrimaryDark">#44BEFF</color>
+    <color name="colorPrimary">#4AE1FF</color>
+    <color name="colorPrimaryDark">#FFEB3B</color>
     <color name="colorAccent">#D81B60</color>
-    <color name="colorAccentLoginBtnStart">#B8FAFA</color>
-    <color name="colorAccentLoginBtnEnd">#11FFF5</color>
+    <color name="Stripe">#9BFFFF</color>
+    <color name="StripeOne">#91FFD3</color>
+    <color name="StripeTwo">#FFFFFF</color>
+    <color name="colorAccentLoginBtnStart">#FFF28F</color>
+    <color name="colorAccentLoginBtnEnd">#FFED5A</color>
 </resources>

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">DBFitnesWorld</string>
+    <string name="app_name">ZWorkout</string>
     <string-array name="avatars">
         <item>Kuririn</item>
         <item>Gohan</item>
