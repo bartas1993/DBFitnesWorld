@@ -11,10 +11,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CustomDialougeAddExercise"/>
-        <activity android:name=".Home"></activity>
+        <activity android:name=".dietlog"></activity>
+        <activity android:name=".Settings" />
+        <activity
+            android:name=".stepCounter"
+            android:label="@string/title_activity_step_counter"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Donatepage"
+            android:label="@string/title_activity_donatepage"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Wall" />
+        <activity android:name=".CustomDialougeAddExercise" />
+        <activity android:name=".Home" />
         <activity android:name=".RegisterNextActivity" />
-        <activity android:name=".RegisterActivity"/>
+        <activity android:name=".RegisterActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

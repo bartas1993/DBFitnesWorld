@@ -30,8 +30,6 @@
         <item>Power Lifting</item>
     </string-array>
     <string-array name="ExerciseTypeBodyB">
-        <item>__ADD NEW__</item>
-        <item>__BICEPS__</item>
         <item>Barbell Curls</item>
         <item>Dumbbell Curls</item>
         <item>Hammer Curls</item>
@@ -42,7 +40,6 @@
         <item>Barbell Preacher Curls</item>
         <item>Elastic Band Curls</item>
         <item>Chin Ups</item>
-        <item>__TRICEPS__</item>
         <item>Bench Dips</item>
         <item>Parallel Bar Dips</item>
         <item>Diamond Push Ups</item>
@@ -73,6 +70,184 @@
         <item>Pike Press</item>
         <item>Muscle Up</item>
     </string-array>
+
+
+    <string-array name="ExerciseTypeAll">
+        <item>Barbell Curls</item>
+        <item>EZ Barbell Curls</item>
+        <item>Incline Hammer Curls</item>
+        <item>Zootman Curls</item>
+        <item>Overhead Cable Curls</item>
+        <item>Close-Grip EZ Bar Curl</item>
+        <item>Barbell Curls Lying Against An Incline</item>
+        <item>Reverse Barbell Preacher Curls</item>
+        <item>Standing One-Arm Cable Curl</item>
+        <item>Seated Close-Grip Concentration Barbell Curl</item>
+        <item>Alternate Incline Dumbbell Curl</item>
+        <item>Reverse Cable Curl</item>
+        <item>Standing Concentration Curl</item>
+        <item>Close-Grip Standing Barbell Curl</item>
+        <item>Preacher Hammer Dumbbell Curl</item>
+        <item>Alternate Hammer Curl</item>
+        <item>Seated Dumbbell Curl</item>
+        <item>Standing One-Arm Dumbbell Curl Over Incline Bench</item>
+        <item>Standing Biceps Cable Curl</item>
+        <item>Lying Supine Dumbbell Curl</item>
+        <item>Two-Arm Dumbbell Preacher Curl</item>
+        <item>Machine Bicep Curls</item>
+        <item>Cross Body Hammer Curls</item>
+        <item>Dumbbell Curls</item>
+        <item>Hammer Curls</item>
+        <item>Concentration Curls</item>
+        <item>Drag Curls</item>
+        <item>Spider Curls</item>
+        <item>Incline Dumbbell Curls</item>
+        <item>Barbell Preacher Curls</item>
+        <item>Elastic Band Curls</item>
+        <item>One hand Chin Ups</item>
+        <item>Chin Ups</item>
+        <item>Bench Dips</item>
+        <item>Decline EZ Bar Triceps Extensions</item>
+        <item>Incline Barbell Triceps Extension</item>
+        <item>Close-Grip EZ-Bar Press</item>
+        <item>Standing Bent-Over Two-Arm Dumbbell Triceps Extension</item>
+        <item>Ring Dips</item>
+        <item>Lying Close-Grip Barbell Triceps Extension Behind The Head</item>
+        <item>Cable Lying Triceps Extension</item>
+        <item>Standing Overhead Barbell Triceps Extension</item>
+        <item>Triceps Overhead Extension with Rope</item>
+        <item>Band Skull Crusher</item>
+        <item>Reverse Triceps Bench Press</item>
+        <item>Body Tricep Press</item>
+        <item>Close-Grip Dumbbell Press</item>
+        <item>Dumbbell Floor Press</item>
+        <item>Triceps Push Down (V-Bar)</item>
+        <item>Triceps Push Down (V-Bar)</item>
+        <item>Parallel Bar Dips</item>
+        <item>Diamond Push Ups</item>
+        <item>Close Grip Barbell Bench Press</item>
+        <item>Triceps Kick Backs</item>
+        <item>Triceps Push Down</item>
+        <item>Triceps Push Down (Straight Bar)</item>
+        <item>Reverse Grip Triceps Push Down</item>
+        <item>Dumbbell Triceps Extensions</item>
+        <item>EZ Bar Skull Crusher</item>
+        <item>Triceps Push Down (V-Bar)</item>
+        <item>Cable One Arm Triceps Extensions</item>
+        <item>Seated Triceps Press</item>
+        <item>Single Hand Triceps Extensions</item>
+        <item>Standing Triceps Press</item>
+        <item>Triceps Arm Extensions Machine</item>
+        <item>Dip Machine (Triceps)</item>
+        <item>Front Flip</item>
+        <item>Front Flip 180</item>
+        <item>Back Flip</item>
+        <item>Back Flip 180</item>
+        <item>Back Flip 360</item>
+        <item>Cork Screw</item>
+        <item>Butterfly Twist</item>
+        <item>Side Flip</item>
+        <item>Macacco</item>
+        <item>Keep up</item>
+        <item>Keep up no hands</item>
+        <item>Front Handspring</item>
+        <item>Front Handspring (One Hand)</item>
+        <item>Back Handspring</item>
+        <item>Illusion Front Flip</item>
+        <item>Wall Flip 180</item>
+        <item>Wall Flip 360</item>
+        <item>Butterfly Kick</item>
+        <item>Wall Run (Vertical)</item>
+        <item>Wall Run (Horizontal)</item>
+        <item>Wall Flip</item>
+        <item>Round Off</item>
+        <item>Double Leg</item>
+        <item>Cat Leap</item>
+        <item>Kong</item>
+        <item>Double Kong</item>
+        <item>Monkey Reverse Vault</item>
+        <item>Thief Vault</item>
+        <item>Monkey Vault</item>
+        <item>Reverse Vault</item>
+        <item>Lazy Vault</item>
+        <item>Precision Jump</item>
+        <item>Long Jump</item>
+        <item>High Jump</item>
+        <item>Tic Tac</item>
+        <item>Palm Spin</item>
+        <item>Stair Climb</item>
+        <item>Lazy Turn</item>
+        <item>Reverse Dash</item>
+        <item>Kong 360</item>
+        <item>Handstand</item>
+        <item>Handstand Walk</item>
+        <item>Handstand Jump</item>
+        <item>Handstand Press</item>
+        <item>Press to Handstand</item>
+        <item>Planche</item>
+        <item>Muscle Up</item>
+        <item>Pseudo Planche</item>
+        <item>Pike Press</item>
+        <item>Muscle Up</item>
+        <item>Rickshaw Carry</item>
+        <item>Farmers Walk</item>
+        <item>Wrist Rotation (Straight Bar)</item>
+        <item>Round Off</item>
+        <item>Palms-Down Wrist Curl Over A Bench</item>
+        <item>Palms-Up Barbell Wrist Curl Over A Bench</item>
+        <item>Standing Palms-Up Barbell Behind The Back Wrist Curl</item>
+        <item>Finger Curls</item>
+        <item>Seated Two-Arm Palms-Up Low-Pulley Wrist Curl</item>
+        <item>Wrist Roller</item>
+        <item>Seated One-Arm Dumbbell Palms-Up Wrist Curl</item>
+        <item>Seated Palms-Down Barbell Wrist Curl</item>
+        <item>Dumbbell Lying Supination</item>
+        <item>Dumbbell Lying Pronation</item>
+        <item>Seated Palm-Up Barbell Wrist Curl</item>
+        <item>Palms-Up Dumbbell Wrist Curl Over A Bench</item>
+        <item>Standing Olympic Plate Hand Squeeze</item>
+        <item>Seated Dumbbell Palms-Down Wrist Curl</item>
+        <item>Palms-Down Dumbbell Wrist Curl Over A Bench</item>
+        <item>Cable Wrist Curl</item>
+        <item>Seated Dumbbell Palms-Up Wrist Curl</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+
+    </string-array>
+    <string name="title_activity_donatepage">Donatepage</string>
+    <string name="title_activity_step_counter">stepCounter</string>
 
 
 </resources>

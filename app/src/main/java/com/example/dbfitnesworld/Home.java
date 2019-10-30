@@ -3,17 +3,20 @@ package com.example.dbfitnesworld;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
 
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.Intent;
 import android.content.res.ColorStateList;
+import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.view.MotionEvent;
@@ -54,6 +57,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
+import java.util.ResourceBundle;
 
 public class Home extends AppCompatActivity implements PopupMenu.OnMenuItemClickListener {
 
@@ -93,7 +97,6 @@ public class Home extends AppCompatActivity implements PopupMenu.OnMenuItemClick
         calendarView = findViewById(R.id.dates);
         datecal = findViewById(R.id.datecal);
         strlev = findViewById(R.id.strlev);
-        menumain = findViewById(R.id.menumain);
         endlev = findViewById(R.id.levendu);
         speedlev = findViewById(R.id.speedlev);
         username = findViewById(R.id.user);
@@ -211,7 +214,6 @@ public class Home extends AppCompatActivity implements PopupMenu.OnMenuItemClick
                 for(DataSnapshot ds: dataSnapshot.getChildren()){
                     String [] a = {databaseReference6.push().getKey()};
                     s = ds.getValue(String.class);
-
                     final TextView [] workouts = new TextView[10];
                     for(int i=0;i<a.length;i++)
                     {
@@ -303,7 +305,7 @@ public class Home extends AppCompatActivity implements PopupMenu.OnMenuItemClick
             }
         });
 
-        menumain.setOnClickListener(new View.OnClickListener() {
+        profilePic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -325,18 +327,25 @@ public class Home extends AppCompatActivity implements PopupMenu.OnMenuItemClick
         switch (menuItem.getItemId())
         {
             case R.id.item1:
-                Toast.makeText(getApplicationContext(), "User Profile", Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.item2:
-                addExercise();
+                startActivity(new Intent(getApplicationContext(),stepCounter.class));
                 return true;
             case R.id.item3:
-                Toast.makeText(getApplicationContext(), "Settings", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(Home.this,Wall.class));
                 return true;
             case R.id.item4:
-                Toast.makeText(getApplicationContext(), "Exit", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Settings coming soon", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(Home.this,Settings.class));
+                return true;
+            case R.id.item5:
+                startActivity(new Intent(getApplicationContext(),Donatepage.class));
+                return true;
+            case R.id.item6:
                 System.exit(0);
                 return true;
+            case R.id.diet:
+                startActivity(new Intent(getApplicationContext(),dietlog.class));
         }
 
         return false;
@@ -370,6 +379,7 @@ public class Home extends AppCompatActivity implements PopupMenu.OnMenuItemClick
         final Spinner routing = CustomLayout.findViewById(R.id.routine);
         final Spinner exercise = CustomLayout.findViewById(R.id.exercisename);
         final SeekBar intensity = CustomLayout.findViewById(R.id.intensity);
+        final SearchView searchView = CustomLayout.findViewById(R.id.searchexer);
         final TextView display = CustomLayout.findViewById(R.id.display);
         final SeekBar motivation = CustomLayout.findViewById(R.id.motivation);
         final TextView motTxt = CustomLayout.findViewById(R.id.motivationtxt);
@@ -377,11 +387,36 @@ public class Home extends AppCompatActivity implements PopupMenu.OnMenuItemClick
         final TextView intenText = CustomLayout.findViewById(R.id.intensitytxt);
         final TextView addNotes = CustomLayout.findViewById(R.id.addnotes);
         final Button confirmW = CustomLayout.findViewById(R.id.addWorkout);
+        final EditText selectedExer = CustomLayout.findViewById(R.id.selectedexercise);
         Button increaserw = CustomLayout.findViewById(R.id.increaseweight);
         Button decreasew = CustomLayout.findViewById(R.id.minusweight);
-
         Button confirm = CustomLayout.findViewById(R.id.confirmAdd);
         final EditText weightinput = CustomLayout.findViewById(R.id.weigtinput);
+        final androidx.appcompat.widget.SearchView.SearchAutoComplete autoComplete = searchView.findViewById(R.id.search_src_text);
+        final ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_dropdown_item_1line,getResources().getStringArray(R.array.ExerciseTypeAll));
+        autoComplete.setAdapter(dataAdapter);
+        searchView.setOnSuggestionListener(new SearchView.OnSuggestionListener() {
+            @Override
+            public boolean onSuggestionSelect(int position) {
+                String selectedItem = (String)dataAdapter.getItem(position);
+                if (selectedItem != null) {
+                    Log.e("search view", selectedItem);
+
+                }
+                selectedExer.setText(selectedItem);
+                return true;
+            }
+
+            @Override
+            public boolean onSuggestionClick(int position) {
+                String selectedItem = (String)dataAdapter.getItem(position);
+                if (selectedItem != null) {
+                    Log.e("search view", selectedItem);
+
+            }
+                selectedExer.setText(selectedItem);
+                return true;
+        }});
         dialog.setContentView(CustomLayout);
         routing.setAdapter(arrayAdapterBody);
         motivation.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
@@ -418,7 +453,6 @@ public class Home extends AppCompatActivity implements PopupMenu.OnMenuItemClick
         confirmW.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                
             }
         });
         intensity.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
@@ -553,7 +587,7 @@ public class Home extends AppCompatActivity implements PopupMenu.OnMenuItemClick
                 databaseRef = FirebaseDatabase.getInstance().getReference("Users").child(user.getUid()).child("Workouts").child(datecal.getText().toString());
                 HashMap<String,String> map = new HashMap<>();
                 map.put("Routine",routing.getSelectedItem().toString());
-                map.put("Exercise Name", exercise.getSelectedItem().toString());
+                map.put("Exercise Name", selectedExer.getText().toString());
                 map.put("Date",datecal.getText().toString());
                 map.put("Reps: ",repss.getText().toString() + " Repetitions");
                 map.put("Weight: "+"Weight:", weightinput.getText().toString()+" Weight(Kg)"+"\n"+"__________________________________________________" );
@@ -561,7 +595,7 @@ public class Home extends AppCompatActivity implements PopupMenu.OnMenuItemClick
                 map.put("Distance: "+"Distance: ",distance.getText().toString()+" Distance(m)");
                 map.put("Intensity: "+"Intensity: ",String.valueOf(intensity.getProgress())+" --Intensity");
                 map.put("Motivation: "+"Motivation: ",String.valueOf(motivation.getProgress())+"--Motivation");
-                display.append(routing.getSelectedItem().toString()+"\n"+exercise.getSelectedItem().toString()
+                display.append(routing.getSelectedItem().toString()+"\n"+selectedExer.getText().toString()
                         +"\n"+repss.getText()+"\n"+weightinput.getText()+"\n"+addNotes.getText()+"\n"+distance.getText()
                         +"\n"+String.valueOf(intensity.getProgress())+"\n"+String.valueOf(motivation.getProgress())+"\n"+"_________________________"+"\n");
                 databaseReference7 = FirebaseDatabase.getInstance().getReference("Users").child(user.getUid()).child("CompleteWorkouts");

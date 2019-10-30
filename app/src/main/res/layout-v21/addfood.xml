@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".CustomDialougeAddExercise"
+    android:backgroundTint="@color/greyblue">
+    >
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/selectfoodsearch"
+            app:queryHint="Suggested Food"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"></androidx.appcompat.widget.SearchView>
+
+        <Spinner
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/exercisename"></Spinner>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:textAlignment="center"
+            android:text="Whole Meal Bread"
+            android:id="@+id/selectedfood"/>
+
+
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:background="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Portions:"
+                android:gravity="center"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="-"
+                    android:id="@+id/minusweight"/>
+                <EditText
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center"
+                    android:hint="portion"
+
+                    android:id="@+id/weigtinput"/>
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="+"
+                    android:id="@+id/increaseweight"/>
+            </LinearLayout>
+            <TextView
+                android:background="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MACROS:"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/carbsminus"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="-" />
+
+                <EditText
+                    android:id="@+id/carbs"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:hint="Carbs"
+                    android:inputType="numberDecimal"
+
+                    android:textAlignment="center"
+                    />
+
+                <Button
+                    android:id="@+id/carbsplus"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="+" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/fatminus"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="-" />
+
+                <EditText
+                    android:id="@+id/fat"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:hint="Fats"
+                    android:inputType="numberDecimal"
+
+                    android:textAlignment="center"
+                    />
+
+                <Button
+                    android:id="@+id/fatplus"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="+" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/protminus"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="-" />
+
+                <EditText
+                    android:id="@+id/protein"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:hint="Proteins"
+                    android:inputType="numberDecimal"
+
+                    android:textAlignment="center"
+                    />
+
+                <Button
+                    android:id="@+id/protplus"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="+" />
+            </LinearLayout>
+            <TextView
+                android:background="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Notes:"
+                android:gravity="center"/>
+            <EditText
+                android:layout_width="250dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_height="40dp" />
+            <Button
+                android:background="@drawable/frameforpostoptionsone"
+                android:layout_marginTop="80dp"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="APPLY"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/display"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+
+</LinearLayout>

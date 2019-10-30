@@ -5,60 +5,78 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_gravity="center"
     tools:context=".RegisterActivity"
    >
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-       >
-
-    </ScrollView>
     <LinearLayout
-        android:background="@color/colorPrimaryDark"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <ImageButton
-            android:layout_width="120px"
-            android:layout_height="120px"
-            android:src="@drawable/list"
-            android:background="@color/colorPrimaryDark"
-            android:id="@+id/menumain"/>
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:background="@color/Stripe"
+        android:gravity="center">
 
         <ImageView
-            android:layout_marginStart="50dp"
             android:src="@drawable/db2"
             android:layout_gravity="center"
             android:layout_width="120px"
             android:layout_height="120px"
             android:id="@+id/profile"/>
         <TextView
-            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:textSize="55px"
             android:textStyle="bold"
             android:text="Username"
             android:textAllCaps="true"
-            android:textColor="@color/colorAccent"
+            android:fontFamily="sans-serif"
+            android:textFontWeight="80"
             android:id="@+id/user"/>
+        <ImageButton
+            android:layout_width="105px"
+            android:layout_height="105px"
+            android:layout_marginStart="170dp"
+            android:src="@drawable/notification"
+            android:backgroundTint="@color/Stripe"/>
+        <ImageButton
+            android:backgroundTint="@color/Stripe"
+
+            android:layout_marginStart="2dp"
+            android:layout_width="105px"
+            android:layout_height="105px"
+            android:src="@drawable/envelope"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/Stripe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
 
     </LinearLayout>
     <LinearLayout
 
         android:layout_width="match_parent"
-        android:layout_height="190dp"
-        android:background="@color/colorPrimary"
+        android:layout_height="160dp"
+
         android:orientation="vertical">
         <TextView
             android:text="500"
+            android:textFontWeight="20"
+            android:fontFamily="sans-serif"
             android:gravity="center"
             android:layout_marginTop="20dp"
             android:layout_gravity="center"
             android:foregroundGravity="center"
             android:layout_width="350dp"
             android:layout_height="20dp"
-            android:id="@+id/levelstat"/>
+            android:id="@+id/levelstat"
+            />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -81,6 +99,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="55px"
                 android:text="TIER: "
+                android:fontFamily="sans-serif"
                 android:layout_marginRight="10dp"
                 android:gravity="center"/>
             <TextView
@@ -183,22 +202,23 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="40dp"
         android:text="CHOOSE DATE"
-        android:textSize="55px"
+        android:textSize="35px"
         android:background="@color/colorPrimaryDark"
         android:textStyle="bold"
         android:gravity="center"/>
     <CalendarView
+        android:background="@color/StripeTwo"
         android:layout_width="match_parent"
         android:layout_height="320dp"
         android:id="@+id/dates"
-        android:background="@color/colorPrimary"></CalendarView>
+      ></CalendarView>
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="30dp"
         android:text="EXERCISE LOG"
-        android:textSize="55px"
+        android:textSize="35px"
         android:background="@color/colorPrimaryDark"
         android:textStyle="bold"
         android:gravity="center"/>
@@ -206,18 +226,17 @@
         android:layout_width="match_parent"
         android:layout_height="20dp"
         android:text="EXERCISE LOG"
-        android:textSize="35px"
+        android:textSize="25px"
         android:background="@color/Stripe"
         android:id="@+id/datecal"
         android:gravity="center"/>
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorPrimary">
+       >
 
 
         <LinearLayout
-            android:background="@color/colorPrimary"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/layoutMain"

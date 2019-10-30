@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity"
+
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+
+                android:gravity="center">
+                <TextView
+                    android:background="@color/Stripe"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textSize="45px"
+                    android:textStyle="bold"
+                    android:text="POWERWORKOUT"
+                    android:textAllCaps="true"
+                    android:fontFamily="sans-serif"
+                    android:textFontWeight="80"
+                    />
+
+                <LinearLayout
+
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="700dp"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/paypal"/>
+                    <TextView
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:textFontWeight="20"
+                        android:fontFamily="sans-serif"
+                        android:textSize="80sp"
+                        android:text="DONATE"
+                        />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textFontWeight="20"
+                        android:textSize="20sp"
+                        android:text="To keep this app add free"
+                        android:textAlignment="center"/>
+                    <TextView
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:textFontWeight="20"
+                        android:textSize="15sp"
+                        android:text="I would like to ask you for simple donation"
+                        android:textAlignment="center"/>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:textFontWeight="20"
+                        android:textSize="15sp"
+                        android:text="Any amount would help me developing an app"
+                        android:textAlignment="center"/>
+                    <TextView
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:textFontWeight="20"
+                        android:textSize="15sp"
+                        android:text="And keep it add free"
+                        android:textAlignment="center"/>
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center">
+
+                        <EditText
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Amount"
+                            android:inputType="number"
+                            android:id="@+id/enteramount"/>
+                        <TextView
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:textSize="30sp"
+                            android:textStyle="bold"
+                            android:text="£"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
+                    <Button
+                        android:layout_marginTop="10dp"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/buttonlogin"
+                        android:text="Donate"/>
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:text="Thanks!!"
+                        android:textAlignment="center"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

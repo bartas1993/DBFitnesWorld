@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#4AE1FF</color>
-    <color name="colorPrimaryDark">#FFEB3B</color>
+    <color name="colorPrimaryDark">#DDFEFF</color>
     <color name="colorAccent">#D81B60</color>
-    <color name="Stripe">#9BFFFF</color>
-    <color name="StripeOne">#91FFD3</color>
-    <color name="StripeTwo">#FFFFFF</color>
+    <color name="Stripe">#B9EFFD</color>
+    <color name="StripeOne">#91C3FF</color>
+    <color name="StripeTwo">#EEFDFF</color>
     <color name="colorAccentLoginBtnStart">#FFF28F</color>
-    <color name="colorAccentLoginBtnEnd">#FFED5A</color>
+    <color name="colorAccentLoginBtnEnd">#FFD05A</color>
+    <color name="black">#000000</color>
+    <color name="greyblue">#E7FCF8</color>
 </resources>

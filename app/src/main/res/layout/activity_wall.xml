@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:background="@color/StripeOne"
+        android:gravity="center">
+        <TextView
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="45px"
+            android:textStyle="bold"
+            android:text="POWERWORKOUT"
+            android:textAllCaps="true"
+            android:fontFamily="sans-serif"
+            android:textFontWeight="80"
+            android:id="@+id/getusername"/>
+        <ImageButton
+
+            android:foregroundTint="@color/StripeOne"
+            android:layout_width="105px"
+            android:layout_height="105px"
+            android:layout_marginStart="120dp"
+            android:src="@drawable/notification"
+            android:backgroundTint="@color/StripeOne"/>
+        <ImageButton
+
+            android:foregroundTint="@color/StripeOne"
+            android:background="@color/StripeOne"
+            android:layout_marginStart="2dp"
+            android:layout_width="105px"
+            android:layout_height="105px"
+            android:src="@drawable/envelope"/>
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+
+
+
+        <ScrollView
+            android:id="@+id/scrollablea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusedByDefault="true"
+            android:screenReaderFocusable="true"
+            android:background="@color/Stripe">
+            <LinearLayout
+                android:focusable="true"
+                android:background="@color/Stripe"
+                style="@style/Widget.AppCompat.TextView"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="left"
+                android:layout_width="390dp"
+                android:gravity="center"
+                android:layout_height="400dp"
+                android:id="@+id/postsPublic"
+                android:orientation="vertical"
+                >
+            </LinearLayout>
+
+        </ScrollView>
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+
+            >
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="4dp"
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <EditText
+                    android:layout_marginBottom="7dp"
+                    android:id="@+id/chatinput"
+                    android:layout_width="320dp"
+                    android:layout_height="50dp"
+                    android:hint="Chat?"
+                    android:textColor="@color/black"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="55px"
+                    android:layout_marginStart="0dp"
+                    android:src="@drawable/sendbutton"
+                    android:id="@+id/sendPost"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </ScrollView>
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
